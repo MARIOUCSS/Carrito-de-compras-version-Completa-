@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito Compras (Version Modelo)</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/00eaeeb0c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 
 <body>
@@ -25,6 +25,33 @@
                 <a href="">Contac</a>
                 <a href="">About</a>
             </div>
+            <!--Carrito Iconos-->
+            <div class="cart-info" id="cart-info">
+               <span class="cart-info-icon">
+                   <i class="fas fa-shopping-cart"></i>
+               </span>
+               <p><span id="item-count">0</span>items</p>               
+            </div>
+            <section>
+                <div class="cart" id="cart">
+                    <h1 class="section-header">Carrito</h1>
+                    <div class="cart-row">
+                        <span class="cart-item  cart-header cart-column">item</span>
+                        <span class="cart-price cart-header cart-column">precio</span>
+                        <span class="cart-quantity cart-header cart-column">cantidad</span>
+
+                    </div>
+                    <div class="cart-items"></div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">
+                          TOTAL
+                        </strong>
+                        <span class="cart-total-price">$0</span>
+
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Comprar</button>
+                </div>
+            </section>
         </div>
 
     </header>
@@ -35,6 +62,7 @@
     <div id="FiltrarBotones">
         <form action="">
             <i class="fa-solid fa-user"></i>
+            
             <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
         </form>
         <button class="btn active" >Todos</button>
@@ -49,7 +77,9 @@
         </div>
     </section>
     <script src="./Frutas.js"></script>
+    <script src="./Carrito.js"></script>
  <script src="./app.js"></script>
+ <script src="./FuncionalidadPg.js"></script>
 </body>
 
 </html>
