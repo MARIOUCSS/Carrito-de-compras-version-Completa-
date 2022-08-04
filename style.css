@@ -195,3 +195,17 @@ font-size: 17px;
     color: #333;
     font-size: 1.1em;
 }
+.cart-items .item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item td{
+    margin:0px 43px;
+}
+#VaciarCarrito,#comprar{
+    border: 1px solid slategrey;
+    background-color: var(--primaryColor);
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

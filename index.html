@@ -32,14 +32,16 @@
                </span>
                <p><span id="item-count">0</span>items</p>               
             </div>
+            <!--Modal de carrito-->
             <section>
                 <div class="cart" id="cart">
                     <h1 class="section-header">Carrito</h1>
                     <div class="cart-row">
+                        <span class="cart-item  cart-header cart-column">imagen</span>
                         <span class="cart-item  cart-header cart-column">item</span>
                         <span class="cart-price cart-header cart-column">precio</span>
                         <span class="cart-quantity cart-header cart-column">cantidad</span>
-
+                        <span class="cart-quantity cart-header cart-column">Eliminar</span>
                     </div>
                     <div class="cart-items"></div>
                     <div class="cart-total">
@@ -49,8 +51,10 @@
                         <span class="cart-total-price">$0</span>
 
                     </div>
-                    <button class="btn btn-primary btn-purchase" type="button">Comprar</button>
+                    <button  id="comprar">Comprar</button>
+                    <button  id="VaciarCarrito" type="button">Vaciar</button>
                 </div>
+                
             </section>
         </div>
 
