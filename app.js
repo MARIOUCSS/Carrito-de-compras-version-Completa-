@@ -1,3 +1,4 @@
+
 const FrutasShop = document.querySelector(".Productos");
 const Busqueda = document.querySelector(".barra-busqueda");
 const Filtros = document.querySelectorAll(".btn");
@@ -38,45 +39,7 @@ function Verificartotal(elemento){
     document.querySelector(".total").textContent='';
   }
 }
-// function BusquedaFrutas() {
-//   //cada vez que escribamos algo Mostrara resultados
-//   // Busqueda.addEventListener("input", (e) => {
 
-//   //   e.preventDefault();
-
-//   //   const especifica = document.querySelectorAll(".grid .items-compra");
-//   //   const busqueda = e.target.value;
-//   //   for (let index = 0; index < especifica.length - 1; index++) {
-//   //     if (
-//   //       especifica[index].dataset.categoria === busqueda ||
-//   //       especifica[index].dataset.nombre === busqueda
-//   //     ) {
-//   //       const fruta = especifica[index].parentNode;
-//   //       const f = {
-//   //         id: fruta.querySelector(".btns").getAttribute("id"),
-//   //         product: fruta.querySelector("h5").textContent,
-//   //         price: fruta.querySelector("h3").textContent,
-//   //         image: fruta.querySelector("img").src,
-//   //         categorias: fruta
-//   //           .querySelector(".items-compra")
-//   //           .getAttribute("data-categoria"),
-//   //       };
-
-//   //      FrutasShop.innerHTML = "";
-
-//   //       MostrarFrutaF(f);
-
-//   //     } else {
-//   //       //mostrar();
-
-//   //       //SellecionarFiltro();
-//   //     }
-//   //     //id: producto.querySelector('a').getAttribute('data-id'),
-//   //   }
-
-//   //   //  prueba.map(fx=>MostrarFrutaF(fx));
-//   // });
-// }
 function mostrar() {
   frutas.map((f) => MostrarFrutaF(f));
 }

@@ -1,5 +1,5 @@
-const frutasM = [];
-const frutas = [
+
+const Frutas = [
   {
     id: "fruit-01",
     product: "apple",
@@ -122,26 +122,26 @@ const frutas = [
   },
 ];
 
-function ModificarArray() {
-  let array = [];
-  const prueba = frutas.map((x) => {
-    if (x.price < 1) {
-      return {
-        ...x,
-        categoria: "Frutas acidas",
-      };
-    } else if (x.price >= 1 || x.price < 4) {
-      return {
-        ...x,
-        categoria: "Frutas Dulces",
-      };
-    } else if (x.price >= 4) {
-      return {
-        ...x,
-        categoria: "Frutas Neutras",
-      };
-    }
-  });
-  return (array = [...prueba]);
-}
+// function ModificarArray() {
+//   let array = [];
+//   const prueba = frutas.map((x) => {
+//     if (x.price < 1) {
+//       return {
+//         ...x,
+//         categoria: "Frutas acidas",
+//       };
+//     } else if (x.price >= 1 || x.price < 4) {
+//       return {
+//         ...x,
+//         categoria: "Frutas Dulces",
+//       };
+//     } else if (x.price >= 4) {
+//       return {
+//         ...x,
+//         categoria: "Frutas Neutras",
+//       };
+//     }
+//   });
+//   return (array = [...prueba]);
+// }
 

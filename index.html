@@ -8,6 +8,7 @@
     <title>Carrito Compras (Version Modelo)</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="./sweetalert2.min.css">
 </head>
 
 <body>
@@ -27,34 +28,42 @@
             </div>
             <!--Carrito Iconos-->
             <div class="cart-info" id="cart-info">
-               <span class="cart-info-icon">
-                   <i class="fas fa-shopping-cart"></i>
-               </span>
-               <p><span id="item-count">0</span>items</p>               
+                <span class="cart-info-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+                <p><span id="item-count">0</span>items</p>
             </div>
             <!--Modal de carrito-->
             <section>
+
                 <div class="cart" id="cart">
                     <h1 class="section-header">Carrito</h1>
-                    <div class="cart-row">
-                        <span class="cart-item  cart-header cart-column">imagen</span>
-                        <span class="cart-item  cart-header cart-column">item</span>
-                        <span class="cart-price cart-header cart-column">precio</span>
-                        <span class="cart-quantity cart-header cart-column">cantidad</span>
-                        <span class="cart-quantity cart-header cart-column">Eliminar</span>
+                    <div class="cart-row" id="cajamodales">
+                       
+                        <thead>
+                            <tr>
+                                <td class="cart-item  cart-header cart-column">Imagen</td>
+                                <td class="cart-item  cart-header cart-column">Item</td>
+                                <td class="cart-price cart-header cart-column">Precio</td>
+                                <td class="cart-quantity cart-header cart-column">Cantidad</td>
+                                <td class="cart-quantity cart-header cart-column">Eliminar</td>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-items1"></tbody>
+                  
                     </div>
                     <div class="cart-items"></div>
                     <div class="cart-total">
                         <strong class="cart-total-title">
-                          TOTAL
+                            TOTAL S/.
                         </strong>
                         <span class="cart-total-price">$0</span>
 
                     </div>
-                    <button  id="comprar">Comprar</button>
-                    <button  id="VaciarCarrito" type="button">Vaciar</button>
+                    <button id="comprare">Comprar</button>
+                    <button id="VaciarCarrito" type="button">Vaciar</button>
                 </div>
-                
+
             </section>
         </div>
 
@@ -66,24 +75,29 @@
     <div id="FiltrarBotones">
         <form action="">
             <i class="fa-solid fa-user"></i>
-            
+
             <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
         </form>
-        <button class="btn active" >Todos</button>
-        <button class="btn " >Frutas Acidas</button>
-        <button class="btn " >Frutas Dulces</button>
-        <button class="btn " >Frutas Neutras</button>
+        <button class="btn active" data-id="Todos">Todos</button>
+        <button class="btn " data-id="Fruta Acida">Frutas Acidas</button>
+        <button class="btn " data-id="Fruta dulce">Frutas Dulces</button>
+        <button class="btn " data-id="Fruta neutra">Frutas Neutras</button>
     </div>
     <section class="container">
-         <div class="total"></div>
+        <div class="total"></div>
         <div class="Productos">
 
         </div>
     </section>
-    <script src="./Frutas.js"></script>
-    <script src="./Carrito.js"></script>
- <script src="./app.js"></script>
- <script src="./FuncionalidadPg.js"></script>
+
+
 </body>
+<script src="pru/Frutas.js"></script>
+<script src="pru/Funcionalidad.js"></script>
+<!---  <script src="./Carrito.js"></script>
+ <script src="./app.js"></script>
+ <script src="./FuncionalidadPg.js"></script>-->
+ <script src="./sweetalert2.min.js"></script>
+<script src="pru/Promesas.js"  type="module"></script>
 
 </html>
