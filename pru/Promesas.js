@@ -38,7 +38,7 @@ function MostrarFrutas() {
     });
 }
 function MostrarFruta(ap) {
-  // let frutas=ModificarArray();
+
 
   ap.forEach((x) => {
     let { id, product, price, image, quantity, categorias } = x;
@@ -56,27 +56,26 @@ function MostrarFruta(ap) {
   });
 }
 
-if (Busqueda) {
+
   Busqueda.addEventListener("keyup", buscarfruta);
-}
 
-if (CajaProducto) {
+
+
   CajaProducto.addEventListener("click", AgregarProducto);
-}
 
-////////
-if (Cajamoda) {
+
+
   Cajamoda.addEventListener("click", EliminarProductos);
-}
 
-if (vaciar) {
+
+
   vaciar.addEventListener("click", vaciarcarrito);
-}
 
-////////////////////////////////////////////////////////
-if (comprar) {
+
+
+
   comprar.addEventListener("click", ComprarProductos);
-}
+
 
 // if(activarf){
 //   activarf.addEventListener("click",()=>{
