@@ -286,33 +286,6 @@ function Verificartotal(elemento) {
     document.querySelector(".total").textContent = "";
   }
 }
-//Mostrar Frutas
-// function MostrarFrutas() {
-//   const jaja = fetch("pru/FRU.json")
-//     .then((res) => res.json())
-//     .then((ap) => {
-//       MostrarFruta(ap);
-//     });
-// }
-
-// function MostrarFruta(ap) {
-//   // let frutas=ModificarArray();
-
-//   ap.forEach((x) => {
-//     let { id, product, price, image, quantity, categorias } = x;
-//     const div = document.createElement("div");
-//     div.classList.add("grid");
-//     div.innerHTML += `
-//       <img width="220" height="120" src=${image} alt="">
-//       <h5 class="Fruta-nombre">${product}</h5>
-//       <div class="items-compra" data-nombre="${product}" data-categoria="${categorias}">
-//       <h3 class="Fruta-precio">${price}</h3>
-//       <button class="btns" id=${id} >Agregar Carrito</button>
-//       </div>
-//       `;
-//     FrutasShop.appendChild(div);
-//   });
-// }
 
 function ProcesarPedido() {
   Compras.forEach((prod) => {
