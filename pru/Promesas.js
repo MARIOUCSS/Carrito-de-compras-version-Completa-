@@ -37,6 +37,7 @@ function MostrarFrutas() {
       MostrarFruta(ap);
     });
 }
+
 function MostrarFruta(ap) {
 
 
